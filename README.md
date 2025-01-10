@@ -18,7 +18,7 @@ The primary purpose of this repository is to:
 
 ## Folder Structure
 ```plaintext
-/leetcode-practice
+/src
 |-- /easy
 |   |-- problem-name.ts
 |   |-- ...
