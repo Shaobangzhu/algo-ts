@@ -55,6 +55,12 @@ Each solution file is named after the problem it solves, using a kebab-case form
    ```
    (Ensure you have TypeScript installed globally or in your project.)
 
+5. Run the unit test:
+   ```bash
+   npm run test
+   ```
+   (Ensure you have Jest installed globally or in your project.)
+
 ## Technologies Used
 - **TypeScript**: For static typing and modern JavaScript features.
 - **JavaScript**: As a fallback and for comparison.
