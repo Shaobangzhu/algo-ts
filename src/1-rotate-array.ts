@@ -1,5 +1,7 @@
 /**
- * 旋转数组k步 - 使用pop 和 unshift 时间复杂度O(n^2), 空间复杂度O(1)
+ * 旋转数组k步
+ * 思路：把末尾的元素挨个儿pop, 然后unshift到数组前面
+ * 使用pop 和 unshift 时间复杂度O(n^2), 空间复杂度O(1)
  * @param arr arr
  * @param k k
  * @returns arr
@@ -19,7 +21,9 @@ export function rotate1(arr: number[], k: number): number[] {
 }
 
 /**
- * 旋转数组k步 - 使用concat 和 slice 时间复杂度O(1), 空间复杂度O(n)
+ * 旋转数组k步
+ * 思路：把数组拆分，最后concat拼接到一起
+ * 使用concat 和 slice 时间复杂度O(1), 空间复杂度O(n)
  * @param arr arr
  * @param k k
  * @returns arr
