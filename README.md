@@ -39,11 +39,11 @@ Each solution file is named after the problem it solves, using a kebab-case form
 ## How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/<your-username>/leetcode-practice.git
+   git clone https://github.com/<your-username>/algo-ts.git
    ```
 2. Navigate to the directory:
    ```bash
-   cd leetcode-practice
+   cd algo-ts
    ```
 3. Install dependencies (if required for testing):
    ```bash
