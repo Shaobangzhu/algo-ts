@@ -9,12 +9,12 @@
 export function rotate1(arr: number[], k: number): number[] {
   const length = arr.length;
   if (!k || length === 0) return arr;
-  const step = k % length;
+  const step = k % length; // reduces redundant rotations
 
   for (let i = 0; i < step; i++) {
     const num = arr.pop();
     if (num != undefined) {
-      arr.unshift(num); //unshift的操作的时间复杂度是O(n)
+      arr.unshift(num); // unshift的操作的时间复杂度是O(n)
     }
   }
   return arr;
