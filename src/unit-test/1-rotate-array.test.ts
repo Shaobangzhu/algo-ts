@@ -41,31 +41,31 @@ describe('数组旋转', () => {
     const res = rotate1(arr, k)
     expect(res).toEqual(arr)
   })
-  it('性能测试', () => {
-    const arr1 = []
-    for (let i = 0; i < 10 * 10000; i++) {
-      arr1.push(i)
-    }
-    console.time('rotate1')
-    rotate1(arr1, 9 * 10000)
-    console.timeEnd('rotate1')
+  // it('性能测试', () => {
+  //   const arr1 = []
+  //   for (let i = 0; i < 10 * 10000; i++) {
+  //     arr1.push(i)
+  //   }
+  //   console.time('rotate1')
+  //   rotate1(arr1, 9 * 10000)
+  //   console.timeEnd('rotate1')
 
-    const arr2 = []
-    for (let i = 0; i < 10 * 10000; i++) {
-      arr2.push(i)
-    }
-    console.time('rotate2')
-    rotate2(arr2, 9 * 10000)
-    console.timeEnd('rotate2')
+  //   const arr2 = []
+  //   for (let i = 0; i < 10 * 10000; i++) {
+  //     arr2.push(i)
+  //   }
+  //   console.time('rotate2')
+  //   rotate2(arr2, 9 * 10000)
+  //   console.timeEnd('rotate2')
 
-    const arr3 = []
-    for (let i = 0; i < 10 * 10000; i++) {
-      arr3.push(i)
-    }
-    console.time('rotate3')
-    rotate3(arr3, 9 * 10000)
-    console.timeEnd('rotate3')
-  })
+  //   const arr3 = []
+  //   for (let i = 0; i < 10 * 10000; i++) {
+  //     arr3.push(i)
+  //   }
+  //   console.time('rotate3')
+  //   rotate3(arr3, 9 * 10000)
+  //   console.timeEnd('rotate3')
+  // })
   it('数组最末一位数字是0', () => {
     const arr = [2147483647, -2147483648, 33, 219, 0];
     const res = rotate1(arr, 4);
