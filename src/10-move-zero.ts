@@ -7,7 +7,7 @@
  * The method of splice will cause a nested loop O(n^2)
  * @param arr 
  */
-function moveZero1(arr: number[]): void {
+export function moveZero1(arr: number[]): void {
     const length = arr.length;
     if (length === 0) return;
 

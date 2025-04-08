@@ -5,7 +5,7 @@
 
 import { moveZero3 } from '../10-move-zero';
 
-describe.only('Move 0s to the end of the array', () => {
+describe('Move 0s to the end of the array', () => {
     it('functional test', () => {
         const arr = [1, 0, 0, 4, 3, 0, 11, 0];
         moveZero3(arr);
@@ -21,4 +21,31 @@ describe.only('Move 0s to the end of the array', () => {
         moveZero3(arr);
         expect(arr).toEqual([0, 0, 0, 0, 0, 0, 0, 0]);
     })
+    // it.only('performance test', () => {
+    //     const arr1 = [];
+    //     for (let i = 0; i < 20 * 10000; i++) {
+    //         if (i % 10 === 0) {
+    //             arr1.push(0);
+    //         } else {
+    //             arr1.push(i);
+    //         }
+    //     }
+
+    //     console.time('test moveZero1');
+    //     moveZero1(arr1);
+    //     console.timeEnd('test moveZero1');
+
+    //     const arr2 = [];
+    //     for (let i = 0; i < 20 * 10000; i++) {
+    //         if (i % 10 === 0) {
+    //             arr2.push(0);
+    //         } else {
+    //             arr2.push(i);
+    //         }
+    //     }
+
+    //     console.time('test moveZero3');
+    //     moveZero3(arr2);
+    //     console.timeEnd('test moveZero3');
+    // })
 })
