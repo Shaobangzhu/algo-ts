@@ -25,10 +25,10 @@ export function findContinuousChar1(str: string): IResult {
     const res: IResult = {
         char: '',
         length: 0
-    }
+    };
 
-    const length = str.length
-    if (length === 0) return res
+    const length = str.length;
+    if (length === 0) return res;
 
     let tempLength = 0; // record the current length of the string
 
@@ -51,5 +51,33 @@ export function findContinuousChar1(str: string): IResult {
         i += tempLength - 1;
     }
 
+    return res;
+}
+
+// Two pointer
+export function findContinuousChar2(str: string): IResult {
+    const res: IResult = {
+        char: '',
+        length: 0
+    }
+
+    const length = str.length;
+    if (length === 0) return res;
+
+    let fast = 0;
+    let slow = 0;
+    while(slow < length) {
+        if (str[fast] === str[slow]) {
+            fast++;
+        } else {
+            const diff = fast - slow;
+            if (diff > res.length) {
+                res.char = str[slow];
+                res.length = diff;
+            }
+            slow = fast;
+        }
+    }
+    
     return res;
 }
