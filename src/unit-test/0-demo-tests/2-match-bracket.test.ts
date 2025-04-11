@@ -1,4 +1,4 @@
-import { matchBracket } from "../2-match-bracket";
+import { matchBracket } from "../../0-demo/2-match-bracket";
 
 describe('判断括号是否匹配', () => {
     it('功能测试, 结果匹配', () => {

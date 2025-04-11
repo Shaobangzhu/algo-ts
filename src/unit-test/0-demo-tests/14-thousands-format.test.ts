@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { thousandSepFormat2 } from "../14-thousands-format";
+import { thousandSepFormat2 } from "../../0-demo/14-thousands-format";
 
 describe("format the number with thousand separators", () => {
     it('functional test', () => {

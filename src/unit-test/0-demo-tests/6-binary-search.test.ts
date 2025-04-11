@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { binarySearch1, binarySearch2 } from "../6-binary-search";
+import { binarySearch1, binarySearch2 } from "../../0-demo/6-binary-search";
 
 describe('Binary Search', () => {
     it('functional test for binarySearch1', () => {

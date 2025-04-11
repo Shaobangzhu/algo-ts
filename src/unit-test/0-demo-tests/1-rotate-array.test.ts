@@ -1,4 +1,4 @@
-import { rotate1, rotate2, rotate3 } from '../1-rotate-array';
+import { rotate1, rotate2, rotate3 } from '../../0-demo/1-rotate-array';
 
 describe('数组旋转', () => {
   it('功能测试 rotate1', () => {

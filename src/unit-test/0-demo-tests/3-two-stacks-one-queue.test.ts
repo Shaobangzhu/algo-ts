@@ -1,4 +1,4 @@
-import { MyQueue } from "../3-two-stacks-one-queue";
+import { MyQueue } from "../../0-demo/3-two-stacks-one-queue";
 
 describe('用两个栈实现一个队列', () => {
     it('add and length', () => {

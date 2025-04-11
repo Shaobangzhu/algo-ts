@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { getKthMinValue, ITreeNode } from "../8-kth-min-in-binary-search-tree";
+import { getKthMinValue, ITreeNode } from "../../0-demo/8-kth-min-in-binary-search-tree";
 
 describe("Get kth min number from a BST", () => {
   const bst_root: ITreeNode = {

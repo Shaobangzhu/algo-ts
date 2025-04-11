@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { findPalindromeNumbers3 } from "../13-palindrome-numbers";
+import { findPalindromeNumbers3 } from "../../0-demo/13-palindrome-numbers";
 
 describe("Find palindrome numbers in 1-1000", () => {
   it("functional test", () => {

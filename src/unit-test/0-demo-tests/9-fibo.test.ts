@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { fibonacciIterator } from "../9-fibo";
+import { fibonacciIterator } from "../../0-demo/9-fibo";
 
 // const sample_fibo = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144];
 

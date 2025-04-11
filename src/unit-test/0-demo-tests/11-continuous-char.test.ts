@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { findContinuousChar2 } from "../11-continuous-char";
+import { findContinuousChar2 } from "../../0-demo/11-continuous-char";
 
 describe('Finds the character that appears most continuously in a string.', () => {
     it('functional test', () => {

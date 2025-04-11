@@ -3,7 +3,7 @@
  * @author clu
  */ 
 
-import { toggleLetterCase2 } from "../15-toggle-case-letter";
+import { toggleLetterCase2 } from "../../0-demo/15-toggle-case-letter";
 
 describe.only('Toggle the letter case in a string test', () => {
     it('functional test', () => {

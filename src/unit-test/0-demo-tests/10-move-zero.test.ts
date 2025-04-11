@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { moveZero3 } from '../10-move-zero';
+import { moveZero3 } from '../../0-demo/10-move-zero';
 
 describe('Move 0s to the end of the array', () => {
     it('functional test', () => {

@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { twoSum2 } from "../7-two-sum";
+import { twoSum2 } from "../../0-demo/7-two-sum";
 
 describe('Two Sum', () => {
     it('functional test', () => {

@@ -3,7 +3,7 @@
  * @Shaobangzhu
  */
 
-import { MyQueue } from "../5-queue-by-linkedlist";
+import { MyQueue } from "../../0-demo/5-queue-by-linkedlist";
 
 /**
  * 对比用数组和链表实现队列

@@ -3,7 +3,7 @@
  * @author clu
  */
 
-import { quickSort2 } from "../12-quick-sort";
+import { quickSort2 } from "../../0-demo/12-quick-sort";
 
 describe("Quick Sort", () => {
     it('functional test', () => {
