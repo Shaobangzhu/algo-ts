@@ -5,7 +5,7 @@
 
 import { findPalindromeNumbers3 } from "../13-palindrome-numbers";
 
-describe.only("Find palindrome numbers in 1-1000", () => {
+describe("Find palindrome numbers in 1-1000", () => {
   it("functional test", () => {
     const target = [
       1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 22, 33, 44, 55, 66, 77, 88, 99, 101, 111,
