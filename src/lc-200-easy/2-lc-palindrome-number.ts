@@ -1,3 +1,8 @@
+/**
+ * 9. Palindrome Number
+ * @param x 
+ * @returns 
+ */
 export function isPalindrome(x: number): boolean {
     if (x < 0 || (x !== 0 && x % 10 === 0)) {
         return false;

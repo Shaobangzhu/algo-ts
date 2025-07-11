@@ -1,5 +1,5 @@
 /**
- * Valid Parenthese
+ * 20. Valid Parenthese
  * Given a string s containing just the characters '(',')','{','}','[' and ']', determine if the input string is valid
  * Time Complexity: O(n) - Each character is processed exactly once
  * Space Complexity: O(n) - Stack may contain all opening brackets is worst case
