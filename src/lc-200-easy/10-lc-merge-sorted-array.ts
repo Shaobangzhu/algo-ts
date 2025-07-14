@@ -2,6 +2,8 @@
  * 88. Merge Sorted Array
  * Given two integer arrays nums1 and nums2, sorted in non-decreasing order. 
  * The final sorted array should not be returned by the function, but instead be sorted inside the array nums1.
+ * Time Complexity: O(m+n)
+ * Space Complexity: O(1)
  * @param nums1 
  * @param m number of the elements in nums1
  * @param nums2 
