@@ -1,4 +1,4 @@
-import { mergeTwoLists } from "../../lc-200-easy/6-lc-merge-two-sorted-lists";
+import { mergeTwoLists } from "../../lc-150-easy/6-lc-merge-two-sorted-lists";
 import ListNode from "../../utils/list-node";
 
 // Helper: Convert array to linked list

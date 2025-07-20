@@ -1,4 +1,4 @@
-import { countLargestGroup } from "../../lc-200-easy/19-lc-count-largest-group";
+import { countLargestGroup } from "../../lc-150-easy/19-lc-count-largest-group";
 
 describe("1399. Count Largest Group", ()=>{
     it("returns 4 for n = 13", ()=>{

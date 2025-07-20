@@ -1,4 +1,4 @@
-import { isPalindrome } from "../../lc-200-easy/2-lc-palindrome-number";
+import { isPalindrome } from "../../lc-150-easy/2-lc-palindrome-number";
 
 describe("Given an integer x, return true if x is palindrome", () => {
     it("input is 121, 121 is a Palindrome", () => {

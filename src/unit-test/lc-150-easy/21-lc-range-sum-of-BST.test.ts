@@ -1,4 +1,4 @@
-import { rangeSumBST } from "../../lc-200-easy/21-lc-range-sum-of-BST";
+import { rangeSumBST } from "../../lc-150-easy/21-lc-range-sum-of-BST";
 import TreeNode from "../../utils/tree-node";
 
 describe("938. Range Sum of BST", () => {

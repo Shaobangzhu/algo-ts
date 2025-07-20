@@ -1,4 +1,4 @@
-import { removeDuplicates } from "../../lc-200-easy/18-lc-remove-duplicates-from-sorted-array";
+import { removeDuplicates } from "../../lc-150-easy/18-lc-remove-duplicates-from-sorted-array";
 
 describe("26. Remove Duplicates from Sorted Array", () => {
   it("should return 2 and modify array for [1,1,2]", () => {
