@@ -1,4 +1,4 @@
-import { longestMonotonicSubarray } from "../../lc-150-easy/13-lc-longest-strictly-increasing-or-strictly-decreasing-subarray";
+import { longestMonotonicSubarray } from "../../lc-100-easy/13-lc-longest-strictly-increasing-or-strictly-decreasing-subarray";
 
 describe("3105. Longest Strictly Increasing or Strictly Decreasing Subarray", () => {
   it("handles basic cases", () => {

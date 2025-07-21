@@ -1,4 +1,4 @@
-import { findMissingAndRepeatedValues } from "../../lc-150-easy/22-lc-find-missing-and-repeated-values";
+import { findMissingAndRepeatedValues } from "../../lc-100-easy/22-lc-find-missing-and-repeated-values";
 
 describe("2965. Find Missing and Repeated Values", () => {
   it("Example 1", () => {

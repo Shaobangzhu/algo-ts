@@ -1,4 +1,4 @@
-import { createHelloWorld } from "../../lc-150-easy/1-lc-create-hello-world-func";
+import { createHelloWorld } from "../../lc-100-easy/1-lc-create-hello-world-func";
 
 describe("Create Hello World Function", () => {
     it("should return a function that returns 'Hello World'", ()=>{

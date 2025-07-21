@@ -1,4 +1,4 @@
-import { merge } from "../../lc-150-easy/10-lc-merge-sorted-array";
+import { merge } from "../../lc-100-easy/10-lc-merge-sorted-array";
 
 describe("88. Merge Sorted Array", ()=>{
     it("nums1=[1,2,3,0,0,0], m=3, nums2=[2,5,6], n=3", ()=>{

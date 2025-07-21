@@ -1,4 +1,4 @@
-import { twoSum2 } from "../../lc-150-easy/0-lc-two-sum";
+import { twoSum2 } from "../../lc-100-easy/0-lc-two-sum";
 
 describe("Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target", () => {
     it("input array is [2, 7, 11, 15], target is 9", () => {

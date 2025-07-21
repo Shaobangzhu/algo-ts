@@ -1,4 +1,4 @@
-import { Logger } from "../../lc-150-easy/15-lc-logger-rate-limiter";
+import { Logger } from "../../lc-100-easy/15-lc-logger-rate-limiter";
 
 describe("359. Logger Rate Limiter", () => {
   let logger: Logger;

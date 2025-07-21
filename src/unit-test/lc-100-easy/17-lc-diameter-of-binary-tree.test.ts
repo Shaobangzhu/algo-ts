@@ -1,4 +1,4 @@
-import { diameterOfBinaryTree } from "../../lc-150-easy/17-lc-diameter-of-binary-tree";
+import { diameterOfBinaryTree } from "../../lc-100-easy/17-lc-diameter-of-binary-tree";
 import TreeNode from "../../utils/tree-node";
 
 function buildTree(): TreeNode {

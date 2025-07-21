@@ -1,4 +1,4 @@
-import { isValidParentheses } from "../../lc-150-easy/5-lc-valid-parentheses";
+import { isValidParentheses } from "../../lc-100-easy/5-lc-valid-parentheses";
 
 describe("valid parenthese", ()=>{
     it("input is ()", ()=>{

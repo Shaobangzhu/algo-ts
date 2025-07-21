@@ -1,4 +1,4 @@
-import { majorityElement2 } from "../../lc-150-easy/16-lc-majority-element";
+import { majorityElement2 } from "../../lc-100-easy/16-lc-majority-element";
 
 describe("169. Majority Element", () => {
   it("returns the correct majority for [3, 2, 3]", () => {

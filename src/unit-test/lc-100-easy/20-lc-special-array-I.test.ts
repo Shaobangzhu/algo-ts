@@ -1,4 +1,4 @@
-import { isArraySpecial } from "../../lc-150-easy/20-lc-special-array-I";
+import { isArraySpecial } from "../../lc-100-easy/20-lc-special-array-I";
 
 describe("3151. Special Array I", ()=>{
     test('Example 1: [1, 2, 3, 4]', () => {

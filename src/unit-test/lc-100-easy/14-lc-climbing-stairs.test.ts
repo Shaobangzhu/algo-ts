@@ -1,4 +1,4 @@
-import { climbStairs } from "../../lc-150-easy/14-lc-climbing-stairs";
+import { climbStairs } from "../../lc-100-easy/14-lc-climbing-stairs";
 
 describe("70. Climbing Stairs", ()=>{
     it('should return 1 for n = 0', () => {
