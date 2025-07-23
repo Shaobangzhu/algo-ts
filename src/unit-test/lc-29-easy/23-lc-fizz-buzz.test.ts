@@ -1,4 +1,4 @@
-import { fizzBuzz } from "../../lc-100-easy/23-lc-fizz-buzz";
+import { fizzBuzz } from "../../lc-29-easy/23-lc-fizz-buzz";
 
 describe("412. FizzBuzz", ()=>{
     it("n=3", ()=>{

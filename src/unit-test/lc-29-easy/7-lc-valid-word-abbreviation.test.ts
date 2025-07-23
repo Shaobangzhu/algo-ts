@@ -1,4 +1,4 @@
-import { validWordAbbreviation } from "../../lc-100-easy/7-lc-valid-word-abbreviation";
+import { validWordAbbreviation } from "../../lc-29-easy/7-lc-valid-word-abbreviation";
 
 describe("408. Valid Word Abbreviation", ()=>{
     it("word: internationalization, abbr: i12iz4n", ()=>{

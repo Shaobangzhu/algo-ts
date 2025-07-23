@@ -1,4 +1,4 @@
-import { moveZeros } from "../../lc-100-easy/24-lc-move-zeros";
+import { moveZeros } from "../../lc-29-easy/24-lc-move-zeros";
 
 describe("283.Move Zeros", ()=>{
     it("case 1", ()=>{

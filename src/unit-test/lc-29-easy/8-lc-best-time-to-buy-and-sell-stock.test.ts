@@ -1,4 +1,4 @@
-import { maxProfit } from "../../lc-100-easy/8-lc-best-time-to-buy-and-sell-stock";
+import { maxProfit } from "../../lc-29-easy/8-lc-best-time-to-buy-and-sell-stock";
 
 describe("121. Best Time to Buy and Sell Stock", ()=>{
     it("prices=[7, 1, 5, 3, 6, 4]", ()=>{

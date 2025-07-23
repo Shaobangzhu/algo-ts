@@ -1,4 +1,4 @@
-import { isAnagram } from "../../lc-100-easy/27-lc-valid-anagram";
+import { isAnagram } from "../../lc-29-easy/27-lc-valid-anagram";
 
 describe("242. Valid Anagram", ()=>{
     it("basic positive case: anagram vs nagaram", () => {

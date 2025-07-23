@@ -1,4 +1,4 @@
-import { validPalindromeii } from "../../lc-100-easy/11-lc-valid-palindrome-ii";
+import { validPalindromeii } from "../../lc-29-easy/11-lc-valid-palindrome-ii";
 
 describe("680. Valid Palindrome II", ()=>{
     it("s=aba, output is true",()=>{

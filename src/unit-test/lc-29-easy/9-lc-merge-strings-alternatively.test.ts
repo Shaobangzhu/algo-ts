@@ -1,4 +1,4 @@
-import { mergeAlternatively } from "../../lc-100-easy/9-lc-merge-string-alternatively";
+import { mergeAlternatively } from "../../lc-29-easy/9-lc-merge-string-alternatively";
 
 describe("1768. Merge Strings Alternately", ()=>{
     it("word1=abc, word2=pqr", ()=>{

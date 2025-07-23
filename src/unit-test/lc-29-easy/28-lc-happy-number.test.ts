@@ -1,4 +1,4 @@
-import { isHappy } from "../../lc-100-easy/28-lc-happy-number";
+import { isHappy } from "../../lc-29-easy/28-lc-happy-number";
 
 describe("202. Happy Number", () => {
   it("should return true for 1 (base case)", () => {

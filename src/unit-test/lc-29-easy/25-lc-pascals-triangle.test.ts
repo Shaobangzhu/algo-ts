@@ -1,4 +1,4 @@
-import { generate } from "../../lc-100-easy/25-lc-pascals-triangle";
+import { generate } from "../../lc-29-easy/25-lc-pascals-triangle";
 
 describe("118. Pascal's Triangle", () => {
   it("numRows = 1", () => {

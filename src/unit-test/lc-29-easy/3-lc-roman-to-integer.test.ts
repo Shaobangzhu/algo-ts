@@ -1,4 +1,4 @@
-import { romanToInt } from "../../lc-100-easy/3-lc-roman-to-integer"
+import { romanToInt } from "../../lc-29-easy/3-lc-roman-to-integer"
 
 describe("transform roman to interger number", ()=>{
     it("input string is III", ()=>{

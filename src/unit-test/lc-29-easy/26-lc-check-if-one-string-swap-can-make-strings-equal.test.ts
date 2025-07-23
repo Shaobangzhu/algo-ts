@@ -1,4 +1,4 @@
-import { areAlmostEqual } from "../../lc-100-easy/26-lc-check-if-one-string-swap-can-make-strings-equal";
+import { areAlmostEqual } from "../../lc-29-easy/26-lc-check-if-one-string-swap-can-make-strings-equal";
 
 describe("1790. Check if One String Swap Can Make Strings Equal", () => {
   it("Same strings", () => {

@@ -1,4 +1,4 @@
-import { longestCommonPrefix } from "../../lc-100-easy/4-lc-longest-common-prefix";
+import { longestCommonPrefix } from "../../lc-29-easy/4-lc-longest-common-prefix";
 
 describe("Write a function to find the longest common prefix string amongst an array of strings", ()=>{
     it("input string array is flower, flow, flight", ()=>{

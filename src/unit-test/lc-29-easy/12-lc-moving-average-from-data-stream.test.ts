@@ -1,4 +1,4 @@
-import { MovingAverage1, MovingAverage2 } from "../../lc-100-easy/12-lc-moving-average-from-data-stream";
+import { MovingAverage1, MovingAverage2 } from "../../lc-29-easy/12-lc-moving-average-from-data-stream";
 
 describe("346. Moving Average from Data Stream", ()=>{
     it("returns correct average with window size 3", ()=>{
