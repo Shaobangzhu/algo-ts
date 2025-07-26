@@ -1,4 +1,4 @@
-import { pairSumSorted } from "../../1-two-pointers/1-2sum";
+import { pairSumSorted } from "../../1-two-pointers/1-2sum-sorted";
 
 describe('Two Sum', () => {
     it('Tests an empty array', () => {
