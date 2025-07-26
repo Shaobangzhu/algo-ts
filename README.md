@@ -2,6 +2,8 @@
 
 A TypeScript-based solutions and testing library for common data structures and algorithms — organized by patterns such as Two Pointers, Hash Maps, Sliding Window, Trees, Graphs, and more.
 
+In total 145 algorithm problems.
+
 > 🚀 Built with TDD using Jest for clean, maintainable, and testable algorithm development.
 
 ---
