@@ -2,8 +2,8 @@ import ListNode from "../utils/list-node";
 
 /**
  * Linked List Reversal
- * Time Complexity:
- * Space Complexity:
+ * Time Complexity: O(n)
+ * Space Complexity: O(1) Due to in-place change
  * @param head 
  */
 export function linkedListReversal(head: ListNode | null): ListNode | null {
@@ -20,6 +20,13 @@ export function linkedListReversal(head: ListNode | null): ListNode | null {
     return prevNode;
 }
 
+/**
+ * Recursive Method
+ * Time Complexity: O(n)
+ * Space Complexity: O(n) Due to recursive call stack - one stack frame per node
+ * @param head 
+ * @returns 
+ */
 function linkedListReversalRecursive(head: ListNode | null): ListNode | null {
     // Base case
     if (head === null || head.next === null) {
