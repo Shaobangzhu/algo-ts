@@ -1,37 +1,5 @@
 import { linkedListReversal } from "../../3-linked-lists/1-linkedlist-reversal";
-import ListNode from "../../utils/list-node";
-
-// Helper function to create a linkedlist from an array
-function createLinkedList(values: number[]): ListNode | null {
-    let head: ListNode | null = null;
-    let current: ListNode | null = null;
-
-    values.forEach(val => {
-        const newNode: ListNode = { val, next: null };
-        if (head == null) {
-            head = newNode;
-            current = head;
-        } else {
-            current!.next = newNode;
-            current = current!.next;
-        }
-    });
-
-    return head;
-}
-
-// Helper function to convert a linked list to an array
-function linkedListToArray(head: ListNode | null): number[] {
-    const result: number[] = [];
-    let current: ListNode | null = head;
-
-    while (current !== null) {
-        result.push(current.val);
-        current = current.next;
-    }
-
-    return result;
-}
+import { createLinkedList, linkedListToArray } from "../../utils/test-helpers";
 
 describe('linkedListReversal', () => {
     it('should return null for an empty list', ()=>{
