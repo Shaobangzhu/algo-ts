@@ -73,3 +73,25 @@ export function buildTwoListsWithCommonTail(
 
   return { headA: finalHeadA, headB: finalHeadB, commonHead };
 }
+
+/**
+ * Creates a cycle by linking last node to node at `pos` index (0-based)
+ * @param head 
+ * @param pos 
+ */
+export function createCycle(head: ListNode | null, pos: number): ListNode | null {
+  if (!head || pos < 0) return head;
+
+  let cycleEntry: ListNode | null = null;
+  let cur = head;
+  let idx = 0;
+
+  while (cur.next) {
+    if (idx === pos) cycleEntry = cur;
+    cur = cur.next;
+    idx++;
+  }
+  // connect tail -> cycleEntry
+  if (cycleEntry) cur.next = cycleEntry;
+  return head;
+}
