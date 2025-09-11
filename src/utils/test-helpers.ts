@@ -95,3 +95,17 @@ export function createCycle(head: ListNode | null, pos: number): ListNode | null
   if (cycleEntry) cur.next = cycleEntry;
   return head;
 }
+
+/**
+ * This function is used to return the index of the target node
+ * @param head 
+ * @param target 
+ */
+export function nodeIndex(head: ListNode | null, target: ListNode | null): number {
+  let idx = 0;
+  // The condition: cur is short for cur !== null
+  for (let cur = head; cur; cur = cur.next, idx++) {
+    if (cur === target) return idx;
+  }
+  return -1;
+}

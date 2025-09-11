@@ -1,4 +1,4 @@
-import { ILinkedListNode, reverseLinkedList,createLinkedList } from "../../0-demo/4-reverse-linked-list";
+import { ILinkedListNode, reverseLinkedList, createLinkedList} from "../../0-demo/4-reverse-linked-list";
 
 describe('反转单向链表', () => {
     it('单个元素', () => {
