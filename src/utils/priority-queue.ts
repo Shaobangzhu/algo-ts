@@ -1,5 +1,5 @@
 /** Generic binary heap / priority queue */
-class PriorityQueue<T> {
+export class PriorityQueue<T> {
     private data: T[] = [];
     constructor(private higher: (a: T, b: T) => boolean, init?: T[]) {
         if(init && init.length) {
