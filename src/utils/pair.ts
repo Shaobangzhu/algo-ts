@@ -1,0 +1,1 @@
+export type Pair = { str: string; freq: number };
