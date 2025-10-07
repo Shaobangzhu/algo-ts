@@ -30,7 +30,7 @@ export function kMostFrequentStringsMaxHeap(strs: string[], k: number): string[]
 export function kMostFrequentStringsMinHeap(strs: string[], k: number): string[] {
     if (k <= 0) return [];
     const freqs = countFreq(strs);
-    const pq = new PriorityQueue<Pair>(minHeapHigher);
+    const pq = new PriorityQueue<Pair>(minHeapHigher); //注意这一步和maxHeap的区别
     for (const [str, freq] of freqs) {
         pq.push({ str, freq });
         if (pq.size() > k) pq.pop(); // remove worst so far
