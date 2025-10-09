@@ -109,3 +109,12 @@ export function nodeIndex(head: ListNode | null, target: ListNode | null): numbe
   }
   return -1;
 }
+
+/** 朴素法: 每次排序后取中位数，用来校验正确性 */
+export function naiveMedian(arr: number[]): number {
+  const a = [...arr].sort((x, y) => x - y);
+  const len = a.length;
+  if (len === 0) return NaN;
+  if (len % 2 === 1) return a[(len - 1) / 2];
+  return (a[len / 2 - 1] + a[len / 2]) / 2;
+}
