@@ -1,5 +1,7 @@
 import ListNode from "./list-node";
+import TreeNode from "./tree-node";
 
+//#region LinkedList Helpers
 // Helper function to create a linkedlist from an array
 export function createLinkedList(values: number[]): ListNode | null {
   let head: ListNode | null = null;
@@ -22,7 +24,10 @@ export function createLinkedList(values: number[]): ListNode | null {
 // Helper function to create a linkedlist from an array but return a object instead of a ListNode
 // The object contains both the head and tail reference, which makes it convenient when you need to
 // later connect another list (e.g., when building two lists with a shared tail)
-export function buildList(values: number[]): { head: ListNode | null; tail: ListNode | null } {
+export function buildList(values: number[]): {
+  head: ListNode | null;
+  tail: ListNode | null;
+} {
   if (values.length === 0) return { head: null, tail: null };
   const head = new ListNode(values[0]);
   let curr = head;
@@ -76,10 +81,13 @@ export function buildTwoListsWithCommonTail(
 
 /**
  * Creates a cycle by linking last node to node at `pos` index (0-based)
- * @param head 
- * @param pos 
+ * @param head
+ * @param pos
  */
-export function createCycle(head: ListNode | null, pos: number): ListNode | null {
+export function createCycle(
+  head: ListNode | null,
+  pos: number
+): ListNode | null {
   if (!head || pos < 0) return head;
 
   let cycleEntry: ListNode | null = null;
@@ -98,10 +106,13 @@ export function createCycle(head: ListNode | null, pos: number): ListNode | null
 
 /**
  * This function is used to return the index of the target node
- * @param head 
- * @param target 
+ * @param head
+ * @param target
  */
-export function nodeIndex(head: ListNode | null, target: ListNode | null): number {
+export function nodeIndex(
+  head: ListNode | null,
+  target: ListNode | null
+): number {
   let idx = 0;
   // The condition: cur is short for cur !== null
   for (let cur = head; cur; cur = cur.next, idx++) {
@@ -109,6 +120,46 @@ export function nodeIndex(head: ListNode | null, target: ListNode | null): numbe
   }
   return -1;
 }
+
+//#endregion
+
+//#region Tree Helpers
+
+/** Build a tree from a level-order array (nulls allowed). */
+export function arrayToTree(values: Array<number | null>): TreeNode | null {
+  if (!values.length || values[0] == null) return null;
+  const nodes: Array<TreeNode | null> = values.map((v) =>
+    v == null ? null : new TreeNode(v)
+  );
+  for (let i = 0, j = 1; j < nodes.length; i++) {
+    if (nodes[i] != null) {
+      nodes[i]!.left = nodes[j++] ?? null;
+      if (j < nodes.length) nodes[i]!.right = nodes[j++] ?? null;
+    }
+  }
+  return nodes[0];
+}
+
+/** Serialize a tree to trimmed level-order (trailing nulls removed). */
+export function treeToArray(root: TreeNode | null): Array<number | null> {
+  if (!root) return [];
+  const out: Array<number | null> = [];
+  const q: Array<TreeNode | null> = [root];
+  while (q.length) {
+    const n = q.shift()!;
+    if (n) {
+      out.push(n.val);
+      q.push(n.left, n.right);
+    } else {
+      out.push(null);
+    }
+  }
+  // trim trailing nulls
+  while (out.length && out[out.length - 1] === null) out.pop();
+  return out;
+}
+
+//#endregion
 
 /** 朴素法: 每次排序后取中位数，用来校验正确性 */
 export function naiveMedian(arr: number[]): number {
