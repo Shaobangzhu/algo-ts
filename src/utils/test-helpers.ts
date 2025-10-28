@@ -159,6 +159,13 @@ export function treeToArray(root: TreeNode | null): Array<number | null> {
   return out;
 }
 
+/** Helper to fetch a node reference by value (assumes unique values). */
+export function findTreeNode(root: TreeNode | null, target: number): TreeNode | null {
+  if (!root) return null;
+  if (root.val === target) return root;
+  return findTreeNode(root.left, target) ?? findTreeNode(root.right, target);
+}
+
 //#endregion
 
 /** 朴素法: 每次排序后取中位数，用来校验正确性 */
