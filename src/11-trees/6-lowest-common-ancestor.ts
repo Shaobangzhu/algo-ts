@@ -15,16 +15,16 @@ export function lowestCommonAncestor(root: TreeNode | null, p: TreeNode, q: Tree
     function dfs(node: TreeNode | null): boolean {
         if (!node) return false;
 
-        const nodeIsPQ = node === p || node === q;
+        const nodeIsPOrQ = node === p || node === q;
         const leftHas = dfs(node.left);
         const rightHas = dfs(node.right);
 
         // If any two of the three are true, current node is LCA
-        if ((nodeIsPQ ? 1 : 0) + (leftHas ? 1: 0) + (rightHas ? 1 : 0) === 2 && lca === null) {
+        if ((nodeIsPOrQ ? 1 : 0) + (leftHas ? 1: 0) + (rightHas ? 1 : 0) === 2 && lca === null) {
             lca = node;
         }
         // Return whether this subtree contains p or q
-        return nodeIsPQ || leftHas || rightHas;
+        return nodeIsPOrQ || leftHas || rightHas;
     }
 
     dfs(root);
