@@ -1,3 +1,4 @@
+import GraphNode from "./graph-node";
 import ListNode from "./list-node";
 import TreeNode from "./tree-node";
 
@@ -164,6 +165,34 @@ export function findTreeNode(root: TreeNode | null, target: number): TreeNode | 
   if (!root) return null;
   if (root.val === target) return root;
   return findTreeNode(root.left, target) ?? findTreeNode(root.right, target);
+}
+
+//#endregion
+
+//#region
+/**
+ * Serialize reachable subgraph as adjacency lists
+ * 传入图中的一个节点，然后把这个图转化为一个邻接表
+ * @param start 
+ */ 
+export function serializeGraph(start: GraphNode | null): Record<number, number[]> {
+  if (!start) return [];
+
+  const res: Record<number, number[]> = {};
+  const q: GraphNode[] = [start];
+  const visitedNodes = new Set<GraphNode>([start]);
+
+  while (q.length) {
+    const n = q.shift()!;
+    res[n.val] = n.neighbors.map(x=>x.val).sort((a, b) => a - b);
+    for (const neighbor of n.neighbors) {
+      if (!visitedNodes.has(neighbor)) {
+        visitedNodes.add(neighbor);
+        q.push(neighbor);
+      }
+    }
+  }
+  return res;
 }
 
 //#endregion
